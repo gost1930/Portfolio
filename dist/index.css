@@ -2,3 +2,11 @@
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
 }
+.cours::-webkit-scrollbar {
+    width: 10px;
+        }
+
+      .cours:hover::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: rgb(68, 66, 77);
+        }
