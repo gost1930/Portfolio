@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 *{
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
@@ -5,5 +6,9 @@
 .cours::-webkit-scrollbar {
     width: 10px;
         }
+
+.stack{
+    font-family: "Roboto Slab", serif;
+}
 
       
