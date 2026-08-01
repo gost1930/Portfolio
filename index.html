@@ -1,211 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="./dist/style.css">
-    <link rel="stylesheet" href="./dist/index.css">
-    <title>GOST</title>
-    <style>
-       
-    </style>
-</head>
-<body>
-    <!-- NAVBAR START -->
-    <nav class="h-auto bg-gray-800 flex justify-between md:justify-around items-center p-3 z-50 fixed top-0  w-full">
-        <div class="flex">
-            <!-- <a href="#"><h1 class="text-white font-bold text-2xl">GOST</h1></a> -->
-            <a href="#"><img src="./dist/img/logo.png" alt="" class="w-[70px] h-[30px]"></a>
-        </div>
-        <div class="hidden md:flex">
-            <a href="" class=" h-full mx-2 text-fuchsia-500">HOME</a>
-            <a href="#skills" class="text-white h-full mx-2 hover:text-fuchsia-500">SKILLS</a>
-            <a href="#worcks" class="text-white h-full mx-2 hover:text-fuchsia-500">WORCKS</a>
-        </div> 
-        <div class=" hidden md:flex">
-            <a href="#contact" class="text-fuchsia-500 flex items-center justify-center  hover:text-white hover:bg-fuchsia-700 min-w-[100px] min-h-[40px] border-[2px] hover:border-fuchsia-700 border-fuchsia-500 rounded-full">CALL ME</a>
-        </div>
-        <div class="flex md:hidden cursor-pointer">
-            <i  onclick="navBtn()" class='bx bx-menu text-3xl' style='color:#ffffff'></i>
-        </div>
-       
-        <div id="navBar" class=" flex hidden  absolute flex-col items-center justify-center top-[60px] right-0 z-50 backdrop-blur-3xl h-[230px] w-full p-3 rounded-[12px]">
-            <a href="" class=" h-full mx-2 text-fuchsia-500">HOME</a>
-            <a href="#skills" class="text-black h-full mx-2 hover:text-fuchsia-500">SKILLS</a>
-            <a href="#worcks" class="text-black h-full mx-2 hover:text-fuchsia-500">WORCKS</a>
-            <a href="#contact" class="text-fuchsia-500 flex items-center justify-center  hover:text-white hover:bg-fuchsia-700 min-w-[100px] min-h-[40px] border-[2px] hover:border-fuchsia-700 border-fuchsia-500 rounded-full">CALL ME</a>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/monogram.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta
+      name="description"
+      content="Hadbi Mohamed — Full Stack Engineer building end-to-end web platforms with React.js, Node.js and Express.js, tested with Cypress and deployed on Linux VPS."
+    />
 
-        </div>
-    </nav>
-    <!-- NAVBAR END -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- HERO START -->
-    <section class="h-fit w-full flex flex-col justify-around md:justify-center md:items-center p-3 mt-10">
-     <div class="flex flex-col-reverse md:flex-row-reverse justify-center items-center">
-        <div class="md:w-1/2 flex">
-            <img src="./dist/img/hro-2.svg" alt="">
-        </div>
-        <div class="md:w-1/2  flex flex-col  items-center md:items-start p-2">
-            <h1 class="font-bold my-1 md:my-1 text-lg md:text-2xl">HELLO IM</h1>
-            <h1 class="font-bold mb-2 md:my-2 text-2xl md:text4xl">HADBI MOHAMED, I'M A</h1>
-            <h1 class="font-bold my-3 md:my-3 text-3xl md:text-6xl text-fuchsia-500 text-center md:text-start"><span class="md:text-7xl stack">FULL STACK</span> <span class=" text-slate-700">  WEB</span> DEVELOPER</h1>
-        </div>
-     </div>
-        <div class="flex justify-center mt-8 md:mt-1 md:mb-6">
-            <a href="#skills" class="text-fuchsia-500 flex items-center justify-center  hover:text-white hover:bg-fuchsia-700 w-[120px] min-h-[40px] border-[2px] hover:border-fuchsia-700 border-fuchsia-500 rounded-full shadow-lg hover:shadow-xl hover:shadow-fuchsia-200 ">SEE MORE</a>
-
-        </div>
-    </section>
-    
-    <!-- HERO END -->
-
-    <!-- SKILLS START -->
-    <section class="flex flex-col items-center h-fit w-full bg-gray-200 p-6" id="skills">
-        <h1 class="font-bold text-3xl">MY SKILLS</h1>
-        <div class="flex flex-col md:flex-row p-2 w-full h-full">
-            <div class="md:w-1/2 flex flex-col">
-                <h1 class="text-2xl ml-5 font-bold my-6">PROGRAMMING LANGUAGES & TOOLS</h1>
-                <div class="flex flex-wrap justify-start items-center p-3 w-full">
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/html-5.png" alt=""></div>
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/css-3.png" alt=""></div>
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/js.png" alt=""></div>
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/bootstrap.png" alt=""></div>
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/tailwind-css.svg" alt=""></div>
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/physics.png" alt=""></div>
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/python.png" alt=""></div>
-                    <div class="flex w-[70px] md:w-[100px] h-[70px] md:h-[100px] my-3 md:my-10 mx-[3px] md:mx-3 "><img src="./dist/img/djangoproject.svg" alt=""></div>
-                </div>
-            </div>
-    
-            <div class="md:w-1/2 flex flex-col items-center">
-                <h1 class="text-2xl ml-5 font-bold my-6">WORKFLOW</h1>
-                <div class="flex flex-col justify-start items-start ">
-                    <p class="text-gray-500 my-4">1. I'm a full-stack developer with stunning designs and affordable rates.</p>
-                    <p class="text-gray-500 my-4">2. I create beautiful designs and develop full-stack web applications at accessible prices.</p>
-                    <p class="text-gray-500 my-4">3. With me, you get full-stack development expertise, exquisite designs, and budget-friendly rates.</p>
-                    <p class="text-gray-500 my-4">4. I offer top-notch full-stack development, eye-catching designs, and wallet-friendly prices.</p>
-                    <p class="text-gray-500 my-4">5. As a full-stack developer, I bring together stunning designs and affordable pricing for everyone.</p>
-                </div>  
-            </div>
-        </div>
-    </section>
-    <!-- SKILLS END -->
-
-    <!-- PROJECT START -->
-    <section class="flex flex-col h-fit w-full p-6"
-    id="worcks"
-    >
-        <h1 class="font-bold text-3xl text-center">My Worcks</h1>
-        <div class="flex flex-row items-start justify-start overflow-x-scroll bg-scroll cours my-3">
-            <!-- CART START -->
-            <div class="flex flex-col  min-w-[320px] h-[300px] rounded-[12px] m-2">
-                <div class="h-[90%]"> <img src="./dist/img/19538066_6145997.jpg" alt="" class="w-full h-full"></div>
-                <div class="h-[10%] p-2 flex flex-row justify-around">
-                    <h1>project 1</h1>
-                    <a href="#" class="  text-purple-400">see online <i class='bx bx-right-arrow-alt text-center' style='color:#c084fc'  ></i></a>
-                </div>
-            </div>
-            <!-- CART END -->
-            <!-- CART START -->
-            <div class="flex flex-col  min-w-[320px] h-[300px] rounded-[12px] m-2">
-                <div class="h-[90%]"> <img src="./dist/img/2005.i518.002..website design.jpg" alt="" class="w-full h-full"></div>
-                <div class="h-[10%] p-2 flex flex-row justify-around">
-                    <h1>project 2</h1>
-                    <a href="#" class="  text-purple-400">see online <i class='bx bx-right-arrow-alt text-center' style='color:#c084fc'  ></i></a>
-                </div>
-            </div>
-            <!-- CART END -->
-            <!-- CART START -->
-            <div class="flex flex-col  min-w-[320px] h-[300px] rounded-[12px] m-2">
-                <div class="h-[90%]"> <img src="./dist/img/2670567.jpg" alt="" class="w-full h-full"></div>
-                <div class="h-[10%] p-2 flex flex-row justify-around">
-                    <h1>project 3</h1>
-                    <a href="#" class="  text-purple-400">see online <i class='bx bx-right-arrow-alt text-center' style='color:#c084fc'  ></i></a>
-                </div>
-            </div>
-            <!-- CART END -->
-            <!-- CART START -->
-            <div class="flex flex-col  min-w-[320px] h-[300px] rounded-[12px] m-2">
-                <div class="h-[90%]"> <img src="./dist/img/5329292.jpg" alt="" class="w-full h-full"></div>
-                <div class="h-[10%] p-2 flex flex-row justify-around">
-                    <h1>project 4</h1>
-                    <a href="#" class="  text-purple-400">see online <i class='bx bx-right-arrow-alt text-center' style='color:#c084fc'  ></i></a>
-                </div>
-            </div>
-            <!-- CART END -->
-            <!-- CART START -->
-            <div class="flex flex-col  min-w-[320px] h-[300px] rounded-[12px] m-2">
-                <div class="h-[90%]"> <img src="./dist/img/5615111_2911869.jpg" alt="" class="w-full h-full"></div>
-                <div class="h-[10%] p-2 flex flex-row justify-around">
-                    <h1>project 4</h1>
-                    <a href="#" class="  text-purple-400">see online <i class='bx bx-right-arrow-alt text-center' style='color:#c084fc'  ></i></a>
-                </div>
-            </div>
-            <!-- CART END -->
-            <!-- CART START -->
-            <div class="flex flex-col  min-w-[320px] h-[300px] rounded-[12px] m-2">
-                <div class="h-[90%]"> <img src="./dist/img/Business-Web-Banner-20.jpg" alt="" class="w-full h-full"></div>
-                <div class="h-[10%] p-2 flex flex-row justify-around">
-                    <h1>project 6</h1>
-                    <a href="#" class="  text-purple-400">see online <i class='bx bx-right-arrow-alt text-center' style='color:#c084fc'  ></i></a>
-                </div>
-            </div>
-            <!-- CART END -->
-
-        </div>
-    </section>
-    <!-- PROJECT END -->
-
-    <!-- ABOUT ME START -->
-    <section id="contact" class="flex flex-col h-fit w-full p-2
-     items-center
-    
-    ">
-        <h1 class="font-bold text-3xl text-center ">CONTACT</h1>
-        <div class=" my-1 rounded-lg p-5 md:w-[500px] shadow-md shadow-gray-600
-        mt-3
-        ">
-            <form action="#" class="flex flex-col">
-                <label for="">YOUR NAME:</label>
-                <input class="rounded-xl h-11 p-2 appearance-none focus:outline-none mb-3
-                shadow-inner shadow-gray-400
-                " type="text" name="name" id="name" placeholder="enter your name.." required>
-
-                <label for="">YOUR EMAIL:</label>
-                <input class="rounded-xl h-11 p-2  focus:outline-none mb-3 shadow-inner shadow-gray-400
-                " type="email" name="email" id="email" placeholder="enter your email">
-
-                <label for="#">YOUR MESSAGE:</label>
-                <textarea class="rounded-xl h-[100px] md:h-auto  p-2  focus:outline-none shadow-inner shadow-gray-400" name="" id="" cols="30" rows="10" placeholder="enter your message" required></textarea>
-
-                <button type="submit" class="w-[100px]  bg-slate-800 mt-3 rounded-lg text-white hover:scale-[1.1] transition-all">SUBMIT</button>
-            </form>
-        </div>
-    </section>
-    <!-- ABOUT ME END -->
-<!-- SCL START -->
-
-    <section class="flex justify-center items-center w-full h-[60px] bg-slate-800">
-        <a href="https://www.facebook.com/go.st.1610"><i class='mx-7  text-5xl bx bxl-facebook-circle' style='color:#fefcfc'  ></i></a>
-        <a href="https://www.instagram.com/gost5016/?hl=ar"><i class='mx-7  text-5xl bx bxl-instagram' style='color:#f5f2f2'  ></i></a>
-        <a href="#"><i class='mx-7  text-5xl bx bxl-telegram' style='color:#f5f2f2' ></i></a>
-    </section>
-
-<!-- SCL END -->
-    <!-- FOOTER START -->
-    <footer class="felx flex-col justify-center items-center w-full p-3 bg-gray-800">
-        <div class="flex w-full">
-            
-        </div>
-        <h1 class="text-center text-white">created by <a href="#">HADBI MOHAMED</a></h1>
-        <br>
-        <h2 class="text-center text-white">Copyright © 2024-2025  All rights reserved.</h2>
-    </footer>
-    <!-- FOOTER END -->
-    <script src="./dist/js/index.js"></script>
-</body>
+    <title>Hadbi Mohamed — Full Stack Engineer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
