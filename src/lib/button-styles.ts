@@ -21,7 +21,7 @@ const variants: Record<ButtonVariant, string> = {
 const sizes: Record<ButtonSize, string> = {
   sm: 'h-8 px-3.5 text-[0.8125rem]',
   md: 'h-10 px-5 text-sm',
-  lg: 'h-12 px-6 text-[0.9375rem]',
+  lg: 'h-12 px-6 text-[0.9376rem]',
 }
 
 /** Shared so buttons and anchor-buttons stay visually identical. */
